@@ -205,7 +205,7 @@ def connect():
 def set_address():
     global address_ctr, addresses, adress
     address_ctr += 1
-    if address_ctr > len(addresses):
+    if address_ctr >= len(addresses):
         address_ctr = 0    
     adress = addresses[address_ctr]
 
